@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;550;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-serif: "Georgia", serif;
+  
+  --color-hd-bg: #E4E3E0;
+  --color-hd-ink: #141414;
+  --color-hd-line: #141414;
+}
+
+:root {
+  --f-mono: 'Courier New', Courier, monospace;
+  --line: #141414;
+  --ink: #141414;
+  --bg: #E4E3E0;
+}
+
+/* Fallback classes & Utility rules for High Density theme */
+.data-mono {
+  font-family: var(--f-mono), "JetBrains Mono", monospace;
+}
+
+.grid-border {
+  border: 1px solid var(--line);
+}
+
+.header-serif {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+}
+
+/* Style overrides for high density tables */
+.hd-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.hd-table th, 
+.hd-table td {
+  border: 1px solid var(--line);
+  padding: 4px 8px;
+  font-size: 11px;
+  text-align: left;
+}
+
+.row-hover:hover {
+  background: var(--ink) !important;
+  color: var(--bg) !important;
+}
+
+.row-hover:hover td,
+.row-hover:hover span,
+.row-hover:hover div,
+.row-hover:hover p {
+  color: var(--bg) !important;
+}
+

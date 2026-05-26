@@ -1,0 +1,6 @@
+{
+  "name": "Nexra ERP Portal",
+  "description": "Enterprise-grade international multi-company accounting, tax compliance engine, and ERP platform architecture workbench.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
